@@ -12,17 +12,85 @@
 	<style>
 	html{
 	background-image: url(vancelogo.jpg);}
-	body{
-	background-image: url(vancelogo.jpg);}
-	.face {
-	text-align: center;
-	}
+	.bg-dark {
+	margin-bottom: 0;
+    background-image: url(vancelogo.jpg);}
+  
+    body{
+      font-weight: bold;
+    }
+
+
+  #pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    margin-top: 0;
+  }
+  div.card.card-body.text-center.mt-5 {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-color: black;
+    border-width: 4px;
+    border-radius: 20px;
+  }
+ 
+  .form-control {
+    border-radius: 15px;
+    border-color: black black black rgb(172, 173, 184);
+  }
+
+  .input-group-addon {
+    border-radius: 15px;
+    border-color: black;
+  }
+  input[type="range"] {
+    accent-color: black;
+    background-color: white;
+  }
+
+   @media only screen and (max-width: 480px) {
+    #face2 {
+      display: none;
+    }
+    #face {
+      display: block;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    } 
+  }
+
+    @media only screen and (max-width: 1072px) {
+    #face2 {
+      display: none;
+    }
+    #face {
+      display: block;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+    } 
+  }
+
+  @media only screen and (max-width: 1550px) {
+ /* #face2 {
+      display: none; 
+    } */
+    #pics {
+      margin-left: 0;
+      margin-right: 0;
+      overflow: hidden;
+    } 
 	</style>
 
  
    
   </head>
-  <div class="wholeting">
   <body class="bg-dark">
     <div class="container">
       <div class="row">
@@ -43,13 +111,14 @@
 
                   <input type="range" class="form-control" id="tipInput" value="0">
                   <span class="input-group-addon" id="tipOutput"></span>
-				  
+                 
                 </div>
               </div>
 
 
 
             </form>
+            <p>:-) TIP HIGHER THAN 20% FOR A SURPRISE :-)</p>
             <hr>
 
             <!-- RESULTS -->
@@ -76,13 +145,13 @@
         </div>
       </div>
     </div>
-	</div>
-<img id="face" src="sadshirt.gif" alt="Sad face for under 20 percent tip, Smiley face for over">
-    <!-- Optional JavaScript -->
+<div id="pics"><img id="face" class="shirts" src="sadshirt.gif" alt="Sad face for under 20 percent tip, Smiley face for over">
+<img id="facetwo" class="shirts" src="sadshirt.gif" alt="Sad face for under 20 percent tip, Smiley face for over">
+   </div> <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="tip.js"></script>
+	  <script src="tip.js"></script>
   </body>
 </html>

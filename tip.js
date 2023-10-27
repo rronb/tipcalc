@@ -15,3 +15,16 @@ tipAmount.value = tipValue.toFixed(2);
  //Show Results
 
   document.getElementById('results').style.display='block'
+
+
+ if (tip < 20) {
+  document.getElementById('face').src = 'sadshirt.gif';
+} else if (tip >= 20) {
+  document.getElementById('face').src = 'smileshirt.gif';
+} 
+if (tip < 20) {
+  document.getElementById('facetwo').src = 'sadshirt.gif';
+} else if (tip >= 20) {
+  document.getElementById('facetwo').src = 'smileshirt.gif';
+} 
+}
